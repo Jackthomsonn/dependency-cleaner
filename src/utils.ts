@@ -10,8 +10,8 @@ export function getDependencyName() {
   }
 
   if (dependencyReference.includes('import')) {
-    return dependencyReference.split('from').pop().replace(/['"]+/g, '').trim()
+    return dependencyReference.split('from').pop().replace(/['";]+/g, '').trim()
   } else {
-    return dependencyReference.split('require').pop().replace(/['", ()]+/g, '').trim()
+    return dependencyReference.split('require').pop().replace(/['";, ()]+/g, '').trim()
   }
 }
