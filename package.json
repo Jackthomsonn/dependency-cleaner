@@ -1,0 +1,58 @@
+{
+  "name": "dependency-cleaner",
+  "displayName": "dependency-cleaner",
+  "description": "Dependency cleaner is a neat extension which removes unused dependencies from your project",
+  "version": "0.0.1",
+  "publisher": "Jack Thomson",
+  "engines": {
+    "vscode": "^1.16.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.remove"
+  ],
+  "main": "./out/src/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.remove",
+        "title": "Hello World"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "when": "editorHasSelection",
+          "command": "extension.remove",
+          "group": "1_modification"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "extension.remove",
+        "key": "ctrl+r",
+        "mac": "cmd+r",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "npm run compile && node ./node_modules/mocha/bin/mocha"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.43",
+    "mocha": "^3.5.3",
+    "typescript": "^2.5.2",
+    "vscode": "^1.1.5"
+  },
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
