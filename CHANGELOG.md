@@ -1,7 +1,8 @@
 # Change Log
 All notable changes to the "dependency-cleaner" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [1.0.3]
+- This release fixes a bug where a dependency reference was saved upon the extensions instantiation meaning no references after its first instance would be recognised
 
-## [Unreleased]
+## [1.0.0]
 - Initial release
