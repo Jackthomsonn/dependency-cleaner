@@ -13,5 +13,5 @@ No issues reported as of yet please feel free to report anything you find!
 
 ### 1.0.0
 Initial Release
-> Added initial functionality
-> Cleaned up heirachy of folders
+* Added initial functionality
+* Cleaned up hierarchy of folders
