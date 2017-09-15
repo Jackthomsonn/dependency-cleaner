@@ -3,7 +3,7 @@
   "displayName": "dependency-cleaner",
   "description": "Dependency cleaner is a neat extension which removes unused dependencies from your project",
   "version": "0.0.1",
-  "publisher": "Jack Thomson",
+  "publisher": "jack-thomson",
   "engines": {
     "vscode": "^1.16.0"
   },
