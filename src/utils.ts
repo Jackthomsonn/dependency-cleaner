@@ -6,7 +6,7 @@ export const dependencyReference: string = editor.document.lineAt(selectedLine).
 
 export function getDependencyName() {
   if (dependencyReference === '' || !dependencyReference) {
-    vscode.window.showErrorMessage('ERROR')
+    vscode.window.showErrorMessage('No dependency reference available')
   }
 
   if (dependencyReference.includes('import')) {
