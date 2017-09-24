@@ -1,10 +1,11 @@
 import * as vscode from 'vscode'
 
 export const editor: vscode.TextEditor = vscode.window.activeTextEditor
-export const selectedLine: number = editor.selection.active.line
-export const dependencyReference: string = editor.document.lineAt(selectedLine).text
 
 export function getDependencyName() {
+  let selectedLine: number = editor.selection.active.line
+  let dependencyReference = editor.document.lineAt(selectedLine).text
+
   if (dependencyReference === '' || !dependencyReference) {
     vscode.window.showErrorMessage('No dependency reference available')
   }
