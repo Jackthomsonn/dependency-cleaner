@@ -2,7 +2,7 @@
   "name": "dependency-cleaner",
   "displayName": "dependency-cleaner",
   "description": "Dependency cleaner is handy extension for Visual Studio Code which removes unused dependencies from your project",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "publisher": "jack-thomson",
   "engines": {
     "vscode": "^1.16.0"
@@ -18,7 +18,7 @@
     "commands": [
       {
         "command": "extension.remove",
-        "title": "Hello World"
+        "title": "Dependency Cleaner"
       }
     ],
     "menus": {

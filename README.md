@@ -3,6 +3,8 @@ Dependency cleaner is an extension built for Visual Studio Code to make removing
 
 ## How to use
 
+For mac users, highlight the dependency you wish to remove and press `⌘ + r` or on windows `ctrl + r`
+
 ![alt text](https://raw.githubusercontent.com/Jackthomsonn/dependency-cleaner/master/images/dependency-cleaner.gif)
 
 ## Known Issues
