@@ -13,6 +13,12 @@ No issues reported as of yet please feel free to report anything you find!
 
 ## Release Notes
 
+### 1.0.4
+* Update documentation and update extension command config
+
+### 1.0.3
+* This release fixes a bug where a dependency reference was saved upon the extensions instantiation meaning no references after its first instance would be recognised
+
 ### 1.0.0
 Initial Release
 * Added initial functionality
